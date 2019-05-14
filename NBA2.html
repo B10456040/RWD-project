@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="asset/css/main.css" />
+        <script src="asset/js/java.js"></script>
+        <title>RWD期中期末報告</title>
+</head>
+<body>
+        <nav id="nav">
+				<ul class="container">
+					<li><a href="NBA.html">Myself</a></li>
+					<li><a href="NBA2.html">Basketball</a></li>
+					<li><a href="NBA3.html">Teams</a></li>
+					<li><a href="NBA4.html">History</a></li>
+				</ul>
+			</nav>
+
+    <article id="NBA" class="wrapper style2">
+        <div class="container">
+            <header>
+                <h2>Basketball Introduction</h2>
+                <p>籃球是一個由兩隊參與，在一個長方形籃球場進行的球類運動，每隊出場5名隊員，可將球向任何方向傳、投、拍、滾或運，目的是將籃球投入對方球籃得分，並阻止對方獲得控球權或得分。</p>
+            </header>
+            <div class="row aln-center">
+                <div class="col-sm-6">
+                    <section class="box style1">
+                        <span class="icon featured fa-comments-o"></span>
+                        <h3>場上位置</h3>
+                        <INPUT type="image" src="asset/photo/場上位置.png" class="position" id=btnDivShow name=btnDivShow LANGUAGE=javascript onclick="return btnDivShow_onclick()" >
+                        <p class="introduction">現代籃球比賽中，場上的五名球員通常分為五個位置，包括控球後衛、得分後衛、中鋒、小前鋒、大前鋒。在籃球比賽中，每個位置的責任定義也不是絕對的，球員可能通時負擔多種功能。</p>
+                        <div id=div1 style="display:none" >
+                            <img src="asset/photo/1.PNG" class="num"><p class="posn"><strong>控球後衛，又叫組織後衛（Point Guard）</strong>顧名思義就是掌控球的人，需要出色的運球技術和合理的分配球能力。一般情況下是帶球過半場，然後把球交給位置更好的隊友，然後跑位等著接空位投籃。</p>
+                            <img src="asset/photo/2.PNG" class="num"><p class="posn"><strong>得分後衛（Shooting Guard）</strong>需要通過跑位，得到空位投籃的機會再出手，最好要有穩定的三分球命中率。一般擔任該位置的球員身高和體格都低於前鋒球員，但在速度上具有優勢。</p>
+                            <img src="asset/photo/3.PNG" class="num"><p class="posn"><strong>小前鋒(Small Forward)</strong>籃球比賽陣容中的一個位置，這個位置的要求之一也是得分，但是它對技術和力量的要求更高，需要他做的不僅是普通的投籃，還要有衝擊籃下、撕破防守、為隊友創造機會的能力，即出色的進攻終結能力；同時還要承擔一定的防守任務，強調快速推進上籃的能力。</p>
+                            <img src="asset/photo/4.PNG" class="num"><p class="posn"><strong>大前鋒（Power Forward，有時稱作強力前鋒）</strong>最主要任務就是防守，籃板、蓋帽、卡位是最基本的要求一個典型的大前鋒是球場上體格較壯，而仍具備一定速度的球員。</p>
+                            <img src="asset/photo/5.PNG" class="num"><p class="posn"><strong>中鋒（Center）</strong>籃球比賽陣容中的一個位置，一般都由隊中最高的球員擔任，傳統上強調籃下的防守，以及防守籃板球的保護。中鋒是球隊攻防兩端的樞紐，進攻端的倒球得分、防守端的攔截籃板，這些都是一個中鋒的本職。</p>
+                            <INPUT type="image" src="asset/photo/hide.PNG" id=btnDivHide name=btnDivHide LANGUAGE=javascript onclick="return btnDivHide_onclick()"width=10% height=5%  >
+                        </div>
+                    </section>
+                </div>
+               
+                <div class="col-sm-6">
+                    <section class="box style1">
+                        <span class="icon featured fa-thumbs-o-up"></span>
+                        <h3>籃球戰術</h3>
+                        <iframe width=500px height=290px src="https://www.youtube.com/embed/ep2ZJsP5VOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoWrapper"></iframe>
+                        <p class="ball"><strong>backdoor cut：</strong>從兩邊底線往籃下的戰術</p>
+                        <p class="ball"><strong>block out：：</strong>把對方球員擋住，使其不易強到籃球賽，卡位</p>
+                        <p class="ball"><strong>cut：</strong>切入</p>
+                        <p class="ball"><strong>double team：</strong>用兩位防守球員包夾進攻球員</p>
+                        <p class="ball"><strong>eat up the clock：</strong>進攻方以運球或傳球方式消耗掉比賽所剩下時間</p>
+                        <p class="ball"><strong>fast break：</strong>快攻</p>
+                        <p class="ball"><strong>foul strategy：</strong>犯規戰術</p>
+                        <p class="ball"><strong>give and go：</strong>（進攻方持球球員的）傳切戰術</p>
+                        <p class="ball"><strong>jockey for position：</strong>（籃下）卡位</p>
+                        <p class="ball"><strong>milk the time away：</strong>進攻方以運球或傳球方式消耗掉比賽所剩下時間</p>
+                        <p class="ball"><strong>one-one-one defense：</strong>人盯人防守</p>
+                        <p class="ball"><strong>pick and roll：</strong>（進攻方做掩護之球員的）擋切戰術</p>
+                        <p class="ball"><strong>post-up play：</strong>（進攻方持球球員背對籃框）單吃對方防守球員之戰術</p>
+                        <p class="ball"><strong>triple team：</strong>用三位防守球員包夾進攻球員</p>
+                        <p class="ball"><strong>zone defense：</strong>區域防守，區域聯防</p>
+                    </section>
+                </div>
+            </div>
+            <footer>
+                <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+                <a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+            </footer>
+        </div>
+    </article>
+
+
+    <!--RWD-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
