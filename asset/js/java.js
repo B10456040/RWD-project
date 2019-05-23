@@ -24,8 +24,3 @@ function img2DivHide_onclick()
 {
 	div3.style.display='none';
 }
-
-$('.carousel').carousel({
-	interval: 100
-  })
-	

@@ -17,7 +17,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    font-family: 微軟正黑體;
+    font-family: 標楷體;
 }
 
 article, aside, details, figcaption, figure,
@@ -41,6 +41,7 @@ html {
 
 body {
     padding-top: 3.5em;
+    background-color: #e1eef6;
 }
 
     body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -372,6 +373,8 @@ footer {
     p.home{
         margin-left: 2em;
         font-size: 3vmin;
+        color: #6E7783;
+        text-align: left;
     }
     p.team{
         color:#3C3530;
@@ -416,7 +419,13 @@ footer {
     {
         font-size: 3.5vmin;
         margin: 2em 0 2.5em 0;
+        font-family: setofont;
 
+    }
+    .titlea{
+        
+        font-family: setofont;
+        color: #fab95b;
     }
     .videoWrapper{
       width: 100%;
@@ -450,4 +459,219 @@ footer {
   .carousel-inner > .carousel-item > img{
     width: 150%;
     margin: auto;
+}
+.npust{
+    color:#624d56;
+    background-color:  #7eab95 ;
+}
+.titleb{
+    color: #6a60a9;
+}
+/*清單超連結*/
+a.list{
+    margin-top: 2em;
+    display: block;
+    text-decoration: none;
+    font-weight:1200;
+    color: #d2d78b ;
+    background-color: #2a256d;
+    font-size: 3vmin;
+    line-height: 3em;
+    font-family: sourcehansans-sc;
+}
+a.list:hover{
+    color: #fff !important;
+    background: #383838;
+    border-radius: 19px;
+    
+}
+.novel{
+    color: #913700;
+    text-align: centers;
+}
+/*music*/
+.left-and-right .left 
+{
+    padding-bottom: 10vmin;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+  
+            @media (min-width: 992px) 
+            {
+                .left-and-right .left 
+                {
+                float: left;
+                width: 50%;
+                }
+            }
+            
+            @media (min-width: 768px) 
+            {
+                .left-and-right .left 
+                {
+                float: left;
+                width: 50%;
+                }
+            }
+            
+            
+            @media (min-width: 1200px) 
+            {
+                .left-and-right .left 
+                {
+                float: left;
+                width: 50%;
+                }
+            }
+
+.left-and-right .right 
+{
+    padding-bottom: 10vmin;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+         
+            @media (min-width: 768px) 
+            {
+                .left-and-right .right 
+                {
+                float: left;
+                width: 50%;
+                }
+            }
+            
+            @media (min-width: 992px) 
+            {
+                .left-and-right .right 
+                {
+                float: left;
+                width: 50%;
+                }
+            }
+            
+            @media (min-width: 1200px) 
+            {
+                .left-and-right .right 
+                {
+                float: left;
+                width: 50%;
+                }
+            }
+  .music1{
+      color: #226b80;
+  }
+  .ball1{
+      color: #010059;
+      text-align: center;
+  }
+  /*ball*/
+  .thrd .one {
+    padding-bottom: 10vmin;
+  }
+  
+            @media (min-width: 768px) 
+            {
+                .thrd .one 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+
+            @media (min-width: 992px) 
+            {
+                .thrd .one 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+
+            @media (min-width: 1200px) 
+            {
+                .thrd .one 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+            
+.thrd .two {
+    padding-bottom: 10vmin;
+  }
+            
+            @media (min-width: 768px) 
+            {
+                .thrd .two 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+
+            @media (min-width: 992px)
+            {
+                .thrd .two 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+
+            @media (min-width: 1200px) 
+            {
+                .thrd .two 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+
+.thrd .three {
+    padding-bottom: 10vmin;
+  }
+           
+            @media (min-width: 768px) 
+            {
+                .thrd .three 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+            
+            @media (min-width: 992px) 
+            {
+                .thrd .three 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+            
+            @media (min-width: 1200px) 
+            {
+                .thrd .three 
+                {
+                float: left;
+                width: 33.3333333%;
+                }
+            }
+
+.teamphoto{
+    width:  220px;
+    height:220px;
+}
+.pfo{
+    color: #2a256d;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+
+}
+.footerp{
+    font-size: 7vmin;
+    color: white
 }
