@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,11 @@
 	<script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-58350.js"></script>-->
 	<!--思源黑體
 	<script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-58350.js"></script>-->
+
+</script>
 </head>
 <body class="self">
+		<!--上選單-->
         <nav id="nav">
 				<ul class="container">
 					<li><a href="index.html">Myself</a></li>
@@ -21,10 +24,18 @@
 					<li><a href="NBA3.html">Teams</a></li>
 					<li><a href="NBA4.html">History</a></li>
 				</ul>
-			</nav>
-
-		<article id="Myself" class="wrapper style1">
+		</nav>
+		<!--右選單-->
+		<div class="container" id="faver">
+			<ul class="dropdown">
+				<li><a class=" list" href="#book" >書單</a></li>
+				<li><a class=" list" href="#music">音樂</a></li>
+				<li><a class=" list" href="#vteam">球隊</a></li>
+				<li><a class=" list" href="#food">屏東</a></li>
+			</ul>
+		</div>
 		<!-- Home (Myself) -->
+		<article id="Myself" class="wrapper style1">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
@@ -39,19 +50,52 @@
 				</div>
 			</div>
 		</article>
+			<!--photo-->
 		<article  class="wrapper style1">
-			<div class="container" id="faver">
+			<div class="container">
+					<img src="asset/photo/大四畢業專題展.png" width="20%" height="30%">
+				
+				
 				<div class="row">
-					<div class="col-sm-3 favera"><a href="#book" class="list">推薦書籍清單</a></div>
-					<div class="col-sm-3 favera"><a href="#music" class="list">推薦西洋音樂</a></div>
-					<div class="col-sm-3 favera"><a href="#vteam" class="list">愛看的比賽</a></div>
-					<div class="col-sm-3 favera"><a href="#food" class="list">屏東美食景點</a></div>
+					<div class="col-sm-3"><video id="movie" preload  autoplay loop  width="100%" height="100%" >
+						<source src="asset/photo/nice.ogg" type='video/ogg' />
+						<source src="asset/photo/nice.mp4" type='video/mp4' /></video></div>
+					<div class="col-sm-3"><img src="asset/photo/畢業展團體1.jpg" width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/畢業展五人.jpg" width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/畢業展9+1.jpg" width="100%"></div>
 				</div>
 			</div>
-		<br><br>
+
+			<div class="container">
+					<img src="asset/photo/nice野餐日.png" width="20%" height="30%">
+				
+				
+				<div class="row">
+					<div class="col-sm-3"><img src="asset/photo/野餐日稻草捲.jpg"  width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/野餐日團體.jpg" width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/野餐日跳跳.jpg" width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/野餐日團體2.jpg" width="100%"></div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="asset/photo/高中籃球小隊.png" width="20%" height="30%">
+			
+			
+				<div class="row">
+					<div class="col-sm-3"><video id="movie2"preload  autoplay loop  width="100%" height="100%" >
+						<source src="asset/photo/高中小隊.ogg" type='video/ogg' />
+						<source src="asset/photo/高中小隊.mp4" type='video/mp4' /></video>></div>
+					<div class="col-sm-3"><img src="asset/photo/高中畢業小隊.jpg" width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/高中畢業小隊2.jpg" width="100%"></div>
+					<div class="col-sm-3"><img src="asset/photo/高中小隊3.jpg" width="100%"></div>
+				</div>
+		</div>
 		</article>
-		<article class="wrapper style1" >
-			<div class="container" id="book">
+		<!--book-->
+		<article class="wrapper style1" id="book">
+			<br><br>
+			<div class="container" >
 				<img src="asset/photo/推薦書單.png" width="100%" height="30%">
 				<h3 class="novel">Novel-文學小說</h3>
 					<div class="row">
@@ -71,8 +115,10 @@
 				</div>
 			</div>
 		</article>
-		<article class="wrapper style1" >
-				<div class="container" id="music" >
+		<!--music-->
+		<article class="wrapper style1" id="music">
+			<br><br>
+				<div class="container"  >
 					<img src="asset/photo/西洋音樂.png" width="100%" height="30%">
 					<div class="left-and-right" >
 							<div class="left" >
@@ -99,19 +145,19 @@
 				</div>
 		</article>
 		<br><br><br>
-		<br><br><br>	
 		<br><br><br>
 		<br><br><br>
-		<article class="wrapper style1">
-				<div class="container" id="vteam">
+		<!--team-->
+		<article class="wrapper style1" id="vteam">
+			<br><br>
+				<div class="container" >
 					<img src="asset/photo/球類比賽.png" width="100%" height="30%">
-					<br><br><br><br>
+					<br><br>
 					<div class="thrd" >
 						<div class="one">
 							<div class="box2">
 								<div>
 									<h3 class="ball1">中華職棒-兄弟象</h3>
-									<br><br>
 								</div>
 								<div >
 									<div ><img src="asset/photo/兄弟象.png" class="teamphoto" sizes="80%"></div>
@@ -122,7 +168,6 @@
 							<div class="box2">
 								<div>
 									<h3 class="ball1">超級籃球聯賽-富邦勇士</h3>
-									<br><br>
 								</div>
 								<div >
 									<div  ><img src="asset/photo/富邦勇士.png" class="teamphoto" sizes="20%"></div>
@@ -133,7 +178,6 @@
 							<div class="box2">
 								<div>
 									<h3 class="ball1">NBA-金洲勇士</h3>
-									<br><br>
 								</div>
 								<div >
 									<div ><img src="asset/photo/warriors.png" class="teamphoto"  sizes="20%"></div>
@@ -141,15 +185,14 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<br><br><br><br>
 		</article>
 		<br><br><br>
-		<br><br><br>	
 		<br><br><br>
 		<br><br><br>
-		<article class="wrapper style1" >
-				<div class="container" id="food">
+		<!--food-->
+		<article class="wrapper style1" id="food">
+			<br><br>
+				<div class="container" >
 					<img src="asset/photo/屏東美食景點.png" width="100%" height="30%">
 					<h3 class="pfo">屏東美食</h3>
 						<div class="row">
@@ -165,17 +208,14 @@
 							<div class="col-sm-3"><img src="asset/photo/他站在時光深處.jpg" width="60%" height="80%"></div>
 							<div class="col-sm-3"><img src="asset/photo/它來了，請閉眼.jpg" width="60%" height="80%"></div>
 							<div class="col-sm-3"><img src="asset/photo/美人為餡.jpg" width="60%" height="80%"></div>
-							</div>
+						</div>
 					</div>
-				</div>
 			</article>
+			<!---<img src="asset/photo/top.jpg" width="5%" height="5%" class="footertop" >-->
 	<footer class="footer">
-		<div>
-			<div>
-				<p class="footerp">謝謝</p>
-			</div>
-		</div>
-	</footer>
+			
+			<p class="footerp">謝謝</p>
+		</footer>
 	<!-- Scripts -->
 	<script src="asset/js/jquery.min.js"></script>
 	<script src="asset/js/jquery.scrolly.min.js"></script>
