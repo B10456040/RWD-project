@@ -313,11 +313,17 @@ footer {
         .container {
             width: 100%;
         }
-
+        body{
+            padding: 0.25em;
+        }
             .container.medium {
                 width: 75%;
             }
-
+            .dropdown{
+                position: fixed;
+                list-style: none;
+                left: 95%;
+            }
     }
 
     @media screen and (max-width: 736px) {
@@ -326,11 +332,17 @@ footer {
             width: 100%;
             max-width: calc(100% - 20px);
         }
-
+        body{
+            padding: 0.5em;
+        }
             .container.medium {
                 width: 60%;
             }
-        
+            .dropdown{
+                position: fixed;
+                list-style: none;
+                left: 95%;
+            }
    
     }
 
@@ -477,7 +489,14 @@ a.list{
     background-color: #2a256d;
     font-size: 3vmin;
     line-height: 3em;
-    font-family: sourcehansans-sc;
+    font-family: setofont;
+    text-align: center;
+    border-radius: 9px;
+}
+.dropdown{
+    position: fixed;
+    list-style: none;
+    left: 95%;
 }
 a.list:hover{
     color: #fff !important;
