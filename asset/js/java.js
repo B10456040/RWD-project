@@ -24,3 +24,4 @@ function img2DivHide_onclick()
 {
 	div3.style.display='none';
 }
+/*輪播照片*/

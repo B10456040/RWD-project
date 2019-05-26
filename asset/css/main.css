@@ -264,6 +264,9 @@ footer {
     }
 
 
+    .bigtitle{
+        width: 30%;
+    }
 
 /* Wrappers */
 
@@ -305,7 +308,6 @@ footer {
             .container.medium {
                 width: 720px;
             }
-
     }
 
     @media screen and (max-width: 980px) {
@@ -323,6 +325,7 @@ footer {
                 position: fixed;
                 list-style: none;
                 left: 95%;
+            
             }
     }
 
@@ -343,7 +346,6 @@ footer {
                 list-style: none;
                 left: 95%;
             }
-   
     }
 
     img.square {
@@ -446,32 +448,25 @@ footer {
         width: 15vmin;
 
     }
+/*table*/
+/*表格內文字*/
     .season{
        font-size: 2.5vmin;
     }
+/*總冠軍*/
     .table-hover>tbody>tr:hover{
         background-color: #FBFFB9;
     }
+/*總冠軍字體*/
    .NBACH{
        color:#C65146;
    }
+/*50名人堂*/
    .table-hover2>tbody>tr:hover{
     background-color: #D8E6E7;
-}
-.carousel .carousel-item {
-    height: 20%;
-  }
+    }
   
-  .carousel .carousel-item img {
-    min-height: 20%;
-    max-height: 50vmin;
-    object-fit: cover;
-  }
 
-  .carousel-inner > .carousel-item > img{
-    width: 150%;
-    margin: auto;
-}
 .npust{
     color:#624d56;
     background-color:  #7eab95 ;
@@ -627,6 +622,7 @@ a.list:hover{
                 float: left;
                 width: 33.3333333%;
                 }
+                
             }
 
             @media (min-width: 992px)
@@ -658,6 +654,7 @@ a.list:hover{
                 float: left;
                 width: 33.3333333%;
                 }
+                
             }
             
             @media (min-width: 992px) 
@@ -667,6 +664,7 @@ a.list:hover{
                 float: left;
                 width: 33.3333333%;
                 }
+                
             }
             
             @media (min-width: 1200px) 
@@ -693,4 +691,36 @@ a.list:hover{
 .footerp{
     font-size: 7vmin;
     color: white
+}
+/*照片輪播*/
+  
+  .carousel .carousel-item img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    
+  }
+
+        @media (max-width: 768px) 
+                    {
+                        .carousel .carousel-item img  {
+                        max-height: 500px;
+                        max-width: 100%;
+                        object-fit: cover;
+                         }
+                         .carousel{
+                             margin-top: 1em;
+                             padding: 0%;
+                         }
+                        
+                    }
+.NBAteaa{
+    font-size: 3vmin;
+}
+.foodname{
+    color: #211717;
+    font-weight: 900;
+    background-color:  #f3c1c6;
+    border-radius: 20px;
+
 }
