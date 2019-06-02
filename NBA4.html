@@ -7,6 +7,19 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="asset/css/main.css" />
         <script src="asset/js/java.js"></script>
+        <script>
+          function processFormData() {
+          const nameElement = document.getElementById("name");
+          const name = nameElement.value;
+          const emailElement = document.getElementById("email");
+          const email = emailElement.value;
+          const locationElement = document.getElementById("location");
+          const location = locationElement.value;
+          const messageElement = document.getElementById("message");
+          const message = messageElement.value;
+          alert("你的姓名是 " + name + "\n電子郵件是 " + email + "\n預測冠軍隊伍是 " + location + "\n你想說的訊息是 "+ message);
+        }
+        </script>
         <title>RWD期中期末報告</title>
 </head>
 <body>
@@ -17,18 +30,20 @@
 					<li><a href="NBA3.html">Teams</a></li>
 					<li><a href="NBA4.html">History</a></li>
 				</ul>
-			</nav>
+      </nav>
+     
+
         <article id="NBA" class="wrapper style2">
         <div class="container">
                 <header >
                     <h2>NBA 歷史</h2>
-                    <p>列出2000-2019歷年來獲得<a href="#chap" class="Anba">NBA總冠軍的球隊</a>。<a href="#NBAstar" class="Anba">NBA名人堂</a>也就是指奈·史密斯籃球名人紀念堂，名人堂資格的含金量遠高於球衣號碼退役或者50大巨星之類榮譽。名人堂是偉大的豐碑，也是對於球員生涯的肯定，是除了冠軍戒指之外最好的認可。球員想進入名人堂都必須等到退役後4年。教練必須執教25年以上的教練才有提名資格。</p>
+                    <p class="NBAteaa">列出2000-2019歷年來獲得<a href="#chap" class="Anba">NBA總冠軍的球隊</a>。<a href="#NBAstar" class="Anba">NBA名人堂</a>也就是指奈·史密斯籃球名人紀念堂，名人堂資格的含金量遠高於球衣號碼退役或者50大巨星之類榮譽。名人堂是偉大的豐碑，也是對於球員生涯的肯定，是除了冠軍戒指之外最好的認可。球員想進入名人堂都必須等到退役後4年。教練必須執教25年以上的教練才有提名資格。</p>
                 </header>
                 
                 <br><br>
                 <!--2000-2019總冠軍-->
                         <h3 class="NBACH" >2000-2019總冠軍</h3>
-                  <div class="row" id="chap"></div>
+                  <div class="row" id="chap">
                                 <table class="table table-hover  " style="color:#754F44 ; font-weight:bolder" >
                                 <thead>
                                   <tr>
@@ -120,7 +135,7 @@
                                 <tr>
                                     <td scope="row"><p class="season">2013-2014</p></td>
                                     <td ><p class="season">聖安東尼奧馬刺</p></td>
-                                    <td ><p class="season">Kawhi Anthony Leonar</p></td>
+                                    <td ><p class="season">Kawhi Anthony Leonard</p></td>
                                     <td ><p class="season">Kevin Wayne Durant</p></td>
                                 </tr>
                                 <tr>
@@ -282,12 +297,82 @@
         </div>
         
         </article>
-       
+  
+ 		<!-- Contact -->
+
+     <article id="contact" class="wrapper style4">
+        <div class="container">
+          <header>
+            <h3>預測NBA總冠軍隊伍</h3>
+            <p style="font-size: 4vmin;">投票你所預測勝利的隊伍</p>
+          </header>
+          <div class="row">
+            <div class="col">
+              <form action="" method="post">
+                <div class="row">
+                  <div class=" col-4">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="col-8">
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="col-12">
+                      <select name="location" id="location">
+                          　<option value="Celtics">波士頓塞爾提克 </option>
+                          　<option value="Nets">布魯克林籃網</option>
+                          　<option value="Knicks">紐約尼克</option>
+                          　<option value="76ers">費城76人</option>
+                            <option value="Raptors">多倫多暴龍 </option>
+                            <option value="Bulls">芝加哥公牛</option>
+                            <option value="Cavaliers">克里夫蘭騎士</option>
+                            <option value="Pistons">底特律活塞</option>
+                            <option value="Pacers">印第安那溜馬</option>
+                            <option value="Bucks">密爾瓦基公鹿</option>
+                            <option value="Hawks">亞特蘭大老鷹</option>
+                            <option value="Hornets">夏洛特黃蜂</option>
+                            <option value="Heat">邁阿密熱火</option>
+                            <option value="Magic">奧蘭多魔術</option>
+                            <option value="Wizards">華盛頓巫師</option>
+                            <option value="Nuggets">丹佛金塊 </option>
+                            <option value="Timberwolves">明尼蘇達灰狼</option>
+                            <option value="Thunder">奧克拉荷馬城雷霆</option>
+                            <option value="Blazers">波特蘭拓荒者</option>
+                            <option value="Jazz">猶他爵士</option>
+                            <option value="Warriors">金州勇士</option>
+                            <option value="Clippers">洛杉磯快艇</option>
+                            <option value="Lakers">洛杉磯湖人</option>
+                            <option value="Sun">鳳凰城太陽</option>
+                            <option value="Kings">沙加緬度國王</option>
+                            <option value="Mavericks">達拉斯獨行俠</option>
+                            <option value="Rockets">休士頓火箭</option>
+                            <option value="Grizzlies">曼非斯灰熊</option>
+                            <option value="Pelicans">紐奧良鵜鶘</option>
+                            <option value="Spurs">聖安東尼奧馬刺</option>
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <ul class="row ">
+                      <li class="col-6"><input type="button" value="預測冠軍" onclick="processFormData()"/></li>
+                      <li class="col-6"><input type="reset" value="清除" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+                
+      </article>
 
 
     <!--RWD-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  
 </body>
 </html>
