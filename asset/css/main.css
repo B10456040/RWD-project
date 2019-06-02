@@ -403,16 +403,7 @@ ul{
                 left: 95%;
             }
                             
-                .playername{
-                    margin-top: 1vmin;
-                    color: #cdfbff  ;
-                    background-color: #9c8b5e;
-                    border-radius: 20px;
-                    font-size: 2vmin;
-                    font-weight: 900;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    margin-bottom: 0;
-                }
+               
                 .math{
                     font-size: 1.5vmin;
                     height: 0.3vmin;
@@ -552,11 +543,23 @@ ul{
 }
 /*球員超連結*/
 a.nameplayer{
-    color: #cdfbff  ;
+    color: #cdfbff  !important;
     text-decoration: none;
+  
 }
 a.nameplayer:hover{
     color: #004a2f !important;
+  
+}
+.playername{
+    margin-top: 1vmin;
+    color: #cdfbff  ;
+    background-color: #9c8b5e;
+    border-radius: 20px;
+    font-size: 2vmin;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
 }
 /*清單超連結*/
 a.list{
@@ -647,7 +650,7 @@ a.list2:hover{
   
   .carousel .carousel-item img {
     max-width: 100%;
-    max-height: 500px;
+    max-height: 800px;
     object-fit: cover;
     
   }
@@ -655,7 +658,7 @@ a.list2:hover{
         @media (max-width: 768px) 
                     {
                         .carousel .carousel-item img  {
-                        max-height: 500px;
+                        max-height: 800px;
                         max-width: 100%;
                         object-fit: cover;
                          }
@@ -666,7 +669,12 @@ a.list2:hover{
                         
                     }
 .NBAteaa{
-    font-size: 3vmin;
+    font-size: 3.5vmin;
+    
+}
+.NBAteab{
+    font-size: 3.5vmin;
+    text-align: left;
 }
 .foodname{
     color: #211717;
