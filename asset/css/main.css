@@ -402,18 +402,11 @@ ul{
                 list-style: none;
                 left: 95%;
             }
-                            
                
-                .math{
-                    font-size: 1.5vmin;
-                    height: 0.3vmin;
-                }
-                .matha{
-                    font-size: 1.5vmin;
-                    height: 0.3vmin;
-                    margin-bottom: 7vmin;
-                }
     }
+                 
+               
+    
 
     img.square {
         padding: 10vmin 0;
@@ -559,7 +552,13 @@ a.nameplayer:hover{
     font-size: 2vmin;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
+    margin-bottom: 2vmin;
+}
+.math{
+    margin-top: 2vmin;
+    font-size: 1.5vmin;
+    height: 0.3vmin;
+    line-height: 5vmin;
 }
 /*清單超連結*/
 a.list{
@@ -650,15 +649,15 @@ a.list2:hover{
   
   .carousel .carousel-item img {
     max-width: 100%;
-    max-height: 800px;
+    max-height: 500px;
     object-fit: cover;
     
   }
-
+  
         @media (max-width: 768px) 
                     {
                         .carousel .carousel-item img  {
-                        max-height: 800px;
+                        max-height: 500px;
                         max-width: 100%;
                         object-fit: cover;
                          }
@@ -666,7 +665,7 @@ a.list2:hover{
                              margin-top: 1em;
                              padding: 0%;
                          }
-                        
+                         
                     }
 .NBAteaa{
     font-size: 3.5vmin;
@@ -675,6 +674,7 @@ a.list2:hover{
 .NBAteab{
     font-size: 3.5vmin;
     text-align: left;
+
 }
 .foodname{
     color: #211717;
