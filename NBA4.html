@@ -17,12 +17,35 @@
           const location = locationElement.value;
           const messageElement = document.getElementById("message");
           const message = messageElement.value;
-          alert("你的姓名是 " + name + "\n電子郵件是 " + email + "\n預測冠軍隊伍是 " + location + "\n你想說的訊息是 "+ message);
+          alert("你的姓名是： " + name + "\n電子郵件是： " + email + "\n預測冠軍隊伍是： " + location + "\n你想說的訊息是： "+ message);
+        }
+        //寫檔案
+        function WriteToFile(text) {
+
+        var fso = new ActiveXObject('Scripting.FileSystemObject');
+
+        var dateObj = new Date();
+        var temp ='';
+        temp = temp + dateObj.getYear();
+        temp = temp + (dateObj.getMonth()+1);
+        temp = temp + dateObj.getDate();
+        temp = temp + dateObj.getHours();
+        temp = temp + dateObj.getMinutes();
+        temp = temp + dateObj.getSeconds();
+
+        var folder ='D:\\error-'+temp+'.txt';
+
+        var s = fso.CreateTextFile(folder, true);
+        s.WriteLine(text);
+        s.Close();
+
         }
         </script>
         <title>RWD期中期末報告</title>
 </head>
 <body>
+      
+          
         <nav id="nav">
 				<ul class="container">
 					<li><a href="index.html">Myself</a></li>
@@ -308,7 +331,7 @@
           </header>
           <div class="row">
             <div class="col">
-              <form action="" method="post">
+              <form action="mailto:min19961004@gmail.com" method="post" encType="text/plain">
                 <div class="row">
                   <div class=" col-4">
                     <input type="text" name="name" id="name" placeholder="Name" />
@@ -318,11 +341,12 @@
                   </div>
                   <div class="col-12">
                       <select name="location" id="location">
+                            <option value="Warriors">金州勇士</option>
+                            <option value="Raptors">多倫多暴龍 </option>
                           　<option value="Celtics">波士頓塞爾提克 </option>
                           　<option value="Nets">布魯克林籃網</option>
                           　<option value="Knicks">紐約尼克</option>
                           　<option value="76ers">費城76人</option>
-                            <option value="Raptors">多倫多暴龍 </option>
                             <option value="Bulls">芝加哥公牛</option>
                             <option value="Cavaliers">克里夫蘭騎士</option>
                             <option value="Pistons">底特律活塞</option>
@@ -338,7 +362,7 @@
                             <option value="Thunder">奧克拉荷馬城雷霆</option>
                             <option value="Blazers">波特蘭拓荒者</option>
                             <option value="Jazz">猶他爵士</option>
-                            <option value="Warriors">金州勇士</option>
+                            
                             <option value="Clippers">洛杉磯快艇</option>
                             <option value="Lakers">洛杉磯湖人</option>
                             <option value="Sun">鳳凰城太陽</option>
@@ -348,13 +372,14 @@
                             <option value="Grizzlies">曼非斯灰熊</option>
                             <option value="Pelicans">紐奧良鵜鶘</option>
                             <option value="Spurs">聖安東尼奧馬刺</option>
+                        </select>
                   </div>
                   <div class="col-12">
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <textarea name="message" id="message" placeholder="預測FMVP球員"></textarea>
                   </div>
                   <div class="col-12">
                     <ul class="row ">
-                      <li class="col-6"><input type="button" value="預測冠軍" onclick="processFormData()"/></li>
+                      <li class="col-6"><input type="submit" value="送出預測" onclick="processFormData()"/></li>
                       <li class="col-6"><input type="reset" value="清除" /></li>
                     </ul>
                   </div>

@@ -61,6 +61,7 @@ body, input, textarea, select {
     color: #888;
     font-weight: 300;
     font-size: 13pt;
+    margin-top: 1em;
 }
 article{
     margin-top: 0;
@@ -245,7 +246,20 @@ footer {
 ul{
     list-style: none;
 }
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
 
+    ul.icons li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+    }
+
+        ul.icons li:last-child {
+            padding-right: 0;
+        }
 /* Nav */
 #nav {
     background-color: #2b90d9;
@@ -425,6 +439,7 @@ ul{
     }
     input.position{
         width: 100%;
+       
 
     }
     .col-sm-6{
@@ -461,7 +476,8 @@ ul{
         width: 80%;
     }
     input.position2{
-        width: 50%;
+        width: 60%;
+        border-radius: 20%;
     }
     #img2DivHide{
         
@@ -556,7 +572,7 @@ a.nameplayer:hover{
 }
 .math{
     margin-top: 2vmin;
-    font-size: 1.5vmin;
+    font-size: 3vmin;
     height: 0.3vmin;
     line-height: 5vmin;
 }
@@ -725,7 +741,7 @@ form textarea {
     }
 
 form textarea {
-    height: 15em;
+    height: 10em;
 }
 
 form .actions:last-child {
